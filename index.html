@@ -6,47 +6,45 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
 <header class="main-header">
 <nav class="main-navigation">
 	<a class="main-header-logo">
 	<img src="img/index-logo.svg" width="100" height="100" alt="Логотип сайта «Sedona»">
     </a>
-	  <ul class="site-navigation">
-		<li><a href="info.html">Информация</a></li>
-			<li><a href="photo.video.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-					<li><a href="hotels.html">Гостиницы</a></li>
+	<ul class="site-navigation">
+		<li><a href="#">Информация</a></li>
+			<li><a href="#">Фото и видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+					<li><a href="#">Гостиницы</a></li>
 					</ul>
 				</nav>
-      </header>
+</header>
 
 <main class="conteiner">
-  <div class="opening">
 	<h1 class="visually-hidden">"Welcome to the gorgeous Sedona"</h1>
+  <div class="opening">
 	<p>Седона - небольшой городок в Аризоне, заслуживающий большего</p>
 </div>
 
 	<section class="cause">
 		<h2 class="visually-hidden">Причины</h2>
-		<p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+		<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		<ul class="cause-list">
           <li class="cause-bright">
             <h3>Настоящий городок</h3>
             <p>Седона - не аттракцион для туристов,<br>
              там течет своя жизнь</p>
-             <figure class="cause-content">
+             <div class="cause-content">
           <a href="#"><img src="img/city.jpg" width="286" height="164" alt="Город"></a>
-        </figure>
+        </div>
           </li>
           <li class="cause-bright">
           	<h3>Там есть мост Дьявола</h3>
           	<p>Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
-            <figure class="cause-content">
+            <div class="cause-content">
           <a href="#"><img src="img/bridge.jpg" width="286" height="164" alt="Мост Дьявола"></a>
-        </figure>
+        </div>
           </li>
            <li class="cause-item">
            	 <h3>Небольшая площадь</h3>
@@ -85,12 +83,19 @@
         </ul>
 	</section>
 
-    <section class="interest">
-    	<h2>Заинтересовались?</h2>
-    	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <section class="search-hotels">
+    	<h2 class="visually-hidden">Поиск гостиницы</h2>
+      <p class="hotels-heading">Заинтересовались?</p>
+    	<p class="hotels-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     	 <a class="button" href="hotels.html">Поиск гостиницы в Седоне</a><br>
+       <form action="">
        <!-- Здесь будет форма -->
-        <a href="map.html">Карта</a>
+     </form>
+   </section>
+   <section class="map">
+    <h2 class="visually-hidden">Карта</h2>
+        <img src="" alt="Местоположение гостиницы на карте">
+        <!-- Интерактивная карта -->
     </section>
 </main>
 
@@ -105,7 +110,7 @@
     </div>
      <p class="footer-copyright">
         <b>Разработано:</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru"><img src="logo-html">HTML Academy</a>
       </p>
 </footer>
 
@@ -126,13 +131,13 @@
     <div class="adults">
       <label for="adults">Взрослые:</label>
       <input type="button" name="minus" value="-">
-      <input type="text" name="adults" placeholder="2">
+      <input type="text" name="adults" id="adults" placeholder="2">
       <input type="button" name="plus" value="+">
     </div>
     <div class="child">
        <label for="child">Дети:</label>
       <input type="button" name="minus" value="-">
-      <input type="text" name="child" placeholder="0">
+      <input type="text" name="child" id="child" placeholder="0">
       <input type="button" name="plus" value="+">
     </div>
     </div>
