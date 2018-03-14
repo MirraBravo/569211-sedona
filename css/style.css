@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  background-color: #dadada;
+}
+
+.site-navigation a:active {
+  color: #ff0000;
+}
+
+/*Здесь должны быть горы.*/
+
+.cause-heading,
+.cause-text {
+  text-align: center;
+}
+
+.cause-heading {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.cause-text {
+	line-height: 26px;
+	color: #333333;
+}
+
+.cause-list {
+list-style: none;
+}
+
+.cause-bright {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.cause-bright h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
